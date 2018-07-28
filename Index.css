@@ -1,0 +1,217 @@
+﻿/*INICIALIZACIÓN DE LA POSICIÓN EN 0 DE TODOS LOS CONTENEDORES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Encabezado de la página con color de fondo, ancho y alto*/
+header { width: 100%;
+         height: 8%;
+         background-color: darkslategray;
+        margin: 0 auto;}
+
+/*Estilo del texto de la etiqueta a*/
+header a{
+    text-decoration: none; /*No habilita el estilo de link en el texto*/
+    font-size: x-large; /*Tamaño de la letra*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*Tipo de letra*/
+    float: left; /*Ubicación a la izquierda*/
+    margin-top: 7px; /*margen superior del texto*/
+    margin-left: 15px;/*margen izquierda del texto*/
+    color: darkgrey; /*Color del texto*/
+}
+
+
+#contenedor {
+    width: 100%; /*ancho del contenedor*/
+    margin: 0 auto; /*margen*/
+}
+
+nav {
+    width: 20%; /*ancho del menú izquierdo*/
+    height: 100%; /*alto del menú izquierdo*/
+    background-color:darkslategray; /*Color de fondo del menú*/
+    float: left; /*posición a la izquierda*/
+    position: relative;
+}
+
+nav ul li{
+    list-style: none; /*lista sin link*/
+    }
+nav ul li a {
+    text-decoration: none; /*texto de la lista sin link*/
+    color: #ccc; /*color del texto del menú*/
+   display: block; /*se renderiza las cajas de menú*/ 
+   padding: 15px; /*tamaño de las cajas del menú*/
+    border-bottom: 1px solid dimgray; /*color de la linea que separa el menú*/
+   -webkit-transition: 0.2s; /* habilita la selección*/
+    -moz-transition: 0.2s; /* habilita la selección*/
+    -o-transition: 0.2s; /* habilita la selección*/
+    transition: 0.2s; /* habilita la selección*/
+}
+
+/* activa el puntero del menú*/
+nav ul li a:hover {
+    background-color: aqua;
+    color: #fff;
+    padding-left: 30px;
+}
+
+/*Definición del tamaño de las imagenes del menú*/
+img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+
+section #titulo {
+    color: grey;
+    background-color: aquamarine;
+    width: 100%;
+    height: 4%;
+    padding-left: 50px;
+
+}
+
+section #titulo span {
+    color: blue
+}
+
+#cajas {
+    display: flex;
+    width: 80%
+}
+
+.caja {
+    width: 25%;
+    height: 15%;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+[data-caja1] {
+    margin-left: 2%;
+    background-image: url("img/fondpanel.png");
+    background-color: rgba(74, 215, 162);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+[data-caja2] {
+    background: url("img/fontdispositivo.png");
+    background-color: rgba(72, 215, 211);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+[data-caja3] {
+    background: url("img/fontmedam.png");
+    background-color: rgba(76, 188, 238);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+[data-caja4] {
+    background: url("img/fontcons.png");
+    background-color: rgba(247, 195, 93);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.detalles {
+    padding-top: 1%;
+}
+
+#cajas p {margin-top: 3%;
+   margin-left: 10%;
+   font-size: large;
+   color: white;}
+
+.icons img {
+    width: 10px;
+}
+
+.icons {
+    width: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.monitor {
+    width: 40%;
+    display: block;
+    background: rgba(248, 246, 247);
+    margin: 3%;
+    float: left;
+}
+
+.consumo {
+    width: 20%;
+    display: block;
+    background: rgba(248, 246, 247);
+    margin: 3%;
+    float: left;
+}
+
+.tabla {
+    width: 100%;
+    height: 50%;
+}  
+
+#cont2 p{
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+	header {
+	    height: 10%;
+	}
+	nav {
+	    width: 100%;
+	    height: 52%;
+	    float: none;
+	}
+	#cont1 {
+	    display: block;
+	    width: 90%;
+	    margin-left: 5%;
+	}
+    .contenido {
+        width: 100%;
+    }
+    .caja {
+	    width: 100%;
+	    background-size: 100% 50%;
+	    background-position: right;
+	    background-position-y: top;
+	}
+	#cajas p {
+	    margin-top: 3%;
+	}
+	.detalles {
+	    padding-top: 0%; 
+	    margin-top: 0%;
+	}
+	[data-caja1] {
+	     margin-left: 0%; 
+	}
+    #cajas {
+        width: 100%;
+        display: block;
+    }
+    #cont1 {
+        display: block;
+    }
+    .monitor {
+        width: 100%;
+    }
+    .consumo {
+        width: 100%;
+    }
+}
