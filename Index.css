@@ -66,7 +66,7 @@ img {
     margin-right: 10px;
 }
 
-
+/*Definición del fondo y color del texto del titulo del contenido*/
 section #titulo {
     color: grey;
     background-color: aquamarine;
@@ -76,15 +76,18 @@ section #titulo {
 
 }
 
+/*color de la primera palabra del título*/
 section #titulo span {
     color: blue
 }
 
+/*Propiedad de las 4 cajas de las opciones*/
 #cajas {
     display: flex;
     width: 80%
 }
 
+/*Definición de los atributos de la clase de las cajas en general*/
 .caja {
     width: 25%;
     height: 15%;
@@ -93,7 +96,7 @@ section #titulo span {
     margin-top: 2%;
     margin-right: 5%;
 }
-
+/*Definición de la imagen de la caja, el color y el tamaño*/
 [data-caja1] {
     margin-left: 2%;
     background-image: url("img/fondpanel.png");
@@ -101,47 +104,49 @@ section #titulo span {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+/*Definición de la imagen de la caja, el color y el tamaño*/
 [data-caja2] {
     background: url("img/fontdispositivo.png");
     background-color: rgba(72, 215, 211);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+/*Definición de la imagen de la caja, el color y el tamaño*/
 [data-caja3] {
     background: url("img/fontmedam.png");
     background-color: rgba(76, 188, 238);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+/*Definición de la imagen de la caja, el color y el tamaño*/
 [data-caja4] {
     background: url("img/fontcons.png");
     background-color: rgba(247, 195, 93);
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
+/*Margen superior del texto de detalles*/
 .detalles {
     padding-top: 1%;
 }
-
+/*Definición de la ubicación, tamaño y color del texto de las cajas*/
 #cajas p {margin-top: 3%;
    margin-left: 10%;
    font-size: large;
    color: white;}
 
+/*Tamaño de las imagenes de los iconos de las grillas*/
 .icons img {
     width: 10px;
 }
 
+/*Tamaño de la caja de los iconos*/
 .icons {
     width: 10px;
     float: left;
     margin-right: 10px;
 }
-
+/*Definición de tamaño, ubicación y fondo de la imagen del monitor*/
 .monitor {
     width: 40%;
     display: block;
@@ -149,7 +154,7 @@ section #titulo span {
     margin: 3%;
     float: left;
 }
-
+/*Definición de tamaño, ubicación y fondo de la imagen del consumo*/
 .consumo {
     width: 20%;
     display: block;
@@ -158,60 +163,75 @@ section #titulo span {
     float: left;
 }
 
+/*Ancho y alto  de la grilla*/
 .tabla {
     width: 100%;
     height: 50%;
 }  
 
+/*propidad del color del texto de los parrafos de monitor y consumo*/
 #cont2 p{
     color: black;
 }
 
-
+/*Definición de los atributos del responsive con @media*/
 @media (max-width: 768px) {
-	header {
+    /*propiedad del encabezado*/
+    header {
 	    height: 10%;
-	}
+    }
+    
+    /*propiedad del menú*/
 	nav {
 	    width: 100%;
 	    height: 52%;
 	    float: none;
-	}
+    }
+    
+    /*propiedad del contenedor*/
 	#cont1 {
 	    display: block;
 	    width: 90%;
 	    margin-left: 5%;
-	}
+    }
+    /*propiedad del contenido*/
     .contenido {
         width: 100%;
     }
+
+    /*Propiedades de las 4 cajas*/
     .caja {
 	    width: 100%;
-	    background-size: 100% 50%;
+	    background-size: 100% 70%;
 	    background-position: right;
 	    background-position-y: top;
-	}
+    }
+    
+    /*Propiedad de la ubicación del texto de las cajas*/
 	#cajas p {
 	    margin-top: 3%;
 	}
-	.detalles {
-	    padding-top: 0%; 
-	    margin-top: 0%;
-	}
+	/*Propiedad de la margen de la caja*/
 	[data-caja1] {
 	     margin-left: 0%; 
-	}
+    }
+    
+    /*Definición de la propiedad de ubicar una caja bajo otra*/
     #cajas {
         width: 100%;
         display: block;
     }
+    /*Definición de la propiedad de ubicar una caja bajo otra*/
     #cont1 {
         display: block;
     }
+    /*Ancho de la imagen del monitor*/
     .monitor {
         width: 100%;
     }
+    
+    /*Ancho de la imagen del monitor*/
     .consumo {
         width: 100%;
-    }
+    }*/
 }
